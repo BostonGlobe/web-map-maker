@@ -1,7 +1,7 @@
 /*
 Adobe Illustrator Map Maker conversion script version 1.1
 
-UPDATES: 
+UPDATES:
 Faster: conversion takes one third of the time of the original script
 Fixes problems with JSON upload colors
 Adds document colors to swatches palette
@@ -12,7 +12,7 @@ Once a Map Maker SVG is opened in Illustrator, go to File > Scripts > Other Scri
 
 The script selects data by group and applys a series of styles that can be customized below, including:
 • Colors set to specific CMYK values, ensuring there are no process blacks
-• Define stroke and fills of each group 
+• Define stroke and fills of each group
 • Define dashes and end caps for lines
 
 The script also generates other items that can be customized based on your specs:
@@ -40,7 +40,7 @@ app.executeMenuCommand("doc-color-cmyk");
 
 
 // define "sources" font
-var defaultFont = "BentonGothic-Regular";
+var defaultFont = "Arial";
 
 // define colors
 var highwayColor = new CMYKColor(); highwayColor.black = 40; highwayColor.cyan = 0; highwayColor.magenta = 0; highwayColor.yellow = 0;
@@ -79,7 +79,7 @@ var geojsonColor = new CMYKColor(); geojsonColor.black = 10; geojsonColor.cyan =
 var textBlack = new CMYKColor(); textBlack.black = 10; textBlack.cyan = 7; textBlack.magenta = 61; textBlack.yellow = 88;
 var textGray = new CMYKColor(); textGray.black = 60; textGray.cyan = 0; textGray.magenta = 0; textGray.yellow = 0;
 
-// ***** add used colors to swatches ***** 
+// ***** add used colors to swatches *****
 
 // write an Illustrator Action to the desktop
 var actionString = [
@@ -126,22 +126,22 @@ var actionString = [
   "}"
 ].join("\n");
 
-function writeFile(fileDestStr, contents){   
-    var newFile = File(fileDestStr);   
-    newFile.open('w');   
-    newFile.write(contents);   
-    newFile.close();   
+function writeFile(fileDestStr, contents){
+    var newFile = File(fileDestStr);
+    newFile.open('w');
+    newFile.write(contents);
+    newFile.close();
   };
 
-var actionFileDestStr = Folder.desktop + "/add_used_colors.aia"; 
+var actionFileDestStr = Folder.desktop + "/add_used_colors.aia";
 
-writeFile(actionFileDestStr, actionString);   
-var actionFile = File(actionFileDestStr);   
-app.loadAction(actionFile);   
+writeFile(actionFileDestStr, actionString);
+var actionFile = File(actionFileDestStr);
+app.loadAction(actionFile);
 app.doScript("add swatches", "custom actions");
 
-//clean up  
-actionFile.remove();  
+//clean up
+actionFile.remove();
 app.unloadAction("custom actions", ''); // NOT WORKING?????
 
 function swatchExist(swatchName){
@@ -156,7 +156,7 @@ if ( swatchExist("C=37 M=30 Y=31 K=0")){ doc.spots ['C=37 M=30 Y=31 K=0'].color 
 if ( swatchExist("C=26 M=20 Y=20 K=0")){ doc.spots ['C=26 M=20 Y=20 K=0'].color = majorRoadColor;};
 if ( swatchExist("C=19 M=13 Y=14 K=0")){ doc.spots ['C=19 M=13 Y=14 K=0'].color = minorRoadColor;}; // includes rail, runway, taxiway
 if ( swatchExist("C=46 M=20 Y=10 K=0")){ doc.spots ['C=46 M=20 Y=10 K=0'].color = ferryColor;};
-// if ( swatchExist("C=80 M=82 Y=17 K=4")){ doc.spots ['C=80 M=82 Y=17 K=4'].color = countryBorderColor;};  
+// if ( swatchExist("C=80 M=82 Y=17 K=4")){ doc.spots ['C=80 M=82 Y=17 K=4'].color = countryBorderColor;};
 if ( swatchExist("C=49 M=49 Y=46 K=11")){ doc.spots ['C=49 M=49 Y=46 K=11'].color = otherBorderColor;};
 if ( swatchExist("C=0 M=0 Y=0 K=0")){ doc.spots ['C=0 M=0 Y=0 K=0'].color = earthColor;};
 if ( swatchExist("C=31 M=4 Y=0 K=0")){ doc.spots ['C=31 M=4 Y=0 K=0'].color = waterColor;};
@@ -284,7 +284,7 @@ function convertForPrint(group) {
       pathRef.strokeCap = changeEndCap(group);
     }
   }
-  
+
   if (pItem.compoundPathItems.length > 0) {
     var compoundPaths = pItem.compoundPathItems;
     for (i = 0; i < compoundPaths.length; i++) {
@@ -356,6 +356,3 @@ grayscaleRasterProcess(app.activeDocument);
 app.activeDocument.rasterItems.getByName("terrainbase").duplicate().name="terrainmultiply";
 app.activeDocument.rasterItems.getByName("terrainmultiply").blendingMode=BlendModes.MULTIPLY;
 app.activeDocument.rasterItems.getByName("terrainmultiply").opacity=50;
-
-
-

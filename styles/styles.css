@@ -1,125 +1,141 @@
 @font-face {
-    font-family: 'Benton Gothic Regular';
-    src: url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-regular.eot');
-    src: url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-regular.eot?#iefix') format('embedded-opentype'),
-         url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-regular.woff') format('woff'),
-         url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-regular.ttf') format('truetype');
-    font-weight:normal;
-    font-style:normal;
+  font-family: 'Benton';
+  src: url('https://apps.bostonglobe.com/common/font/benton-regular.woff') format('woff');
+  src: url('https://apps.bostonglobe.com/common/font/benton-regular.woff2') format('woff2');
+  font-weight:normal;
+  font-style:normal;
 }
 
 @font-face {
-    font-family: 'Benton Gothic Regular Italic';
-    src: url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-regular-italic.woff') format('woff');
-    font-weight:normal;
-    font-style:normal;
+  font-family: 'Benton Bold';
+  src: url('https://apps.bostonglobe.com/common/font/benton-bold.woff') format('woff');
+  src: url('https://apps.bostonglobe.com/common/font/benton-bold.woff2') format('woff2');
+  font-weight:600;
+  font-style:normal;
 }
 
 @font-face {
-    font-family: 'Benton Gothic Bold';
-    src: url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-bold.eot');
-    src: url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-bold.eot?#iefix') format('embedded-opentype'),
-         url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-bold.woff') format('woff'),
-         url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-bold.ttf') format('truetype');
-    font-weight:normal;
-    font-style:normal;
+  font-family: 'Miller Banner Italic';
+  src: url('https://apps.bostonglobe.com/common/font/miller-banner-italic.woff') format('woff');
+  src: url('https://apps.bostonglobe.com/common/font/miller-banner-italic.woff') format('woff2');
+  font-weight:normal;
+  font-style:italic;
 }
 
-@font-face {
-    font-family: 'Benton Gothic Bold Italic';
-    src: url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-bold-italic.woff') format('woff');
-    font-weight:normal;
-    font-style:normal;
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
 }
 
-@font-face {
-    font-family: 'Benton Gothic Black';
-    src: url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-black.woff') format('woff');
-    font-weight:normal;
-    font-style:normal;
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%
 }
 
-@font-face {
-    font-family: 'Benton Gothic Black Italic';
-    src: url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-black-italic.woff') format('woff');
-    font-weight:normal;
-    font-style:normal;
+body {
+  padding: 0 0 30px;
+  margin: 0;
+  min-height: 100%;
+  position: relative;
+  font-family: Georgia, serif;
+  color: #333;
+  font-size: 18px
 }
 
-@font-face {
-    font-family: 'Benton Gothic Condensed Regular';
-    src: url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-condensed-regular.woff') format('woff');
-    font-weight:normal;
-    font-style:normal;
+.container {
+  padding-bottom: 60px
 }
 
-@font-face {
-    font-family: 'Benton Gothic Condensed Regular Italic';
-    src: url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-condensed-regular-italic.woff') format('woff');
-    font-weight:normal;
-    font-style:normal;
+h1 {
+  font-family: 'Benton', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 57.5px;
+  color: #000;
+  margin: 5px 0
 }
 
-@font-face {
-    font-family: 'Benton Gothic Condensed Bold';
-    src: url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-condensed-bold.woff') format('woff');
-    font-weight:normal;
-    font-style:normal;
+h2 {
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: normal;
+  color: #000;
+  margin: 5px 0
 }
 
-@font-face {
-    font-family: 'Benton Gothic Condensed Bold Italic';
-    src: url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-condensed-bold-italic.woff') format('woff');
-    font-weight:normal;
-    font-style:normal;
+h3 {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #000;
+  margin: 5px 0
 }
 
-@font-face {
-    font-family: 'Benton Gothic Condensed Black';
-    src: url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-condensed-black.woff') format('woff');
-    font-weight:normal;
-    font-style:normal;
+h4 {
+  font-family: Georgia, serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000;
+  font-weight: bold;
+  margin: 5px 0
 }
 
-@font-face {
-    font-family: 'Benton Gothic Condensed Black Italic';
-    src: url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-condensed-black-italic.woff') format('woff');
-    font-weight:normal;
-    font-style:normal;
+p {
+  font-family: Georgia, serif;
+  color: #333;
+  line-height: 27px;
+  width: 100%;
+  font-size: 18px;
+  margin: 18px 0
 }
 
-@font-face {
-    font-family: 'Benton Gothic Light';
-    src: url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-light.woff') format('woff');
-    font-weight:normal;
-    font-style:normal;
+.clear {
+  clear: both
 }
 
-@font-face {
-    font-family: 'Benton Gothic Light Italic';
-    src: url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-light-italic.woff') format('woff');
-    font-weight:normal;
-    font-style:normal;
+a {
+  color: #4591B8;
+  text-decoration: none
 }
 
-@font-face {
-    font-family: 'Benton Gothic Medium';
-    src: url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-medium.woff') format('woff');
-    font-weight:normal;
-    font-style:normal;
+a:hover {
+  color: #59a9d3;
+  text-decoration: none
 }
 
-@font-face {
-    font-family: 'Benton Gothic Medium Italic';
-    src: url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-medium-italic.woff') format('woff');
-    font-weight:normal;
-    font-style:normal;
+h1 a, h2 a, h3 a, h4 a {
+  color: #000;
+  text-decoration: none
 }
 
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
+  color: #666;
+  text-decoration: none
+}
 
+form.standalone-dropdown {
+  position: relative
+}
 
-body { cyber
-    padding: 0 0 30px;
+form.standalone-dropdown select, form.standalone-dropdown button {
+  float: left;
+  margin: 0 0 10px 0
+}
+
+form.standalone-dropdown select {
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  height: 40px;
+  padding: 8px 4px;
+  min-width: 255px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px
 }
 
 #mapmakerVersion {
@@ -216,7 +232,7 @@ body { cyber
 }
 
 #map_ruler {
-    font-family: 'Curior', monospace;
+    font-family: monospace;
     font-size: 12px;
     margin: 0 0 0 25px;
     width: 2000px;
@@ -273,18 +289,18 @@ body { cyber
 label {font:18px/27px Georgia, serif;}
 
 .map-info {
-    font-family: 'Benton Gothic Regular', Arial, sans-serif;
+    font-family: 'Benton', Helvetica Neue, Helvetica, Arial, sans-serif;
     display: inline-block;
     margin: 5px 10px 0 0;
 }
 
 #map_size {
-    font-family: 'Benton Gothic Regular', Arial, sans-serif;
+    font-family: 'Benton', Helvetica Neue, Helvetica, Arial, sans-serif;
     float: right;
     padding: 0 10px 0 0;
 }
 
-#map_options {padding: 0 0 20px;}
+#map_options {padding: 20px 0;}
 #map_options form { margin: 0 }
 #map_options input { margin: 0 0 6px; }
 
@@ -298,7 +314,7 @@ label {font:18px/27px Georgia, serif;}
 }
 
 #popupContainer {
-    font-family: 'Benton Gothic Regular', Arial, sans-serif;
+    font-family: 'Benton', Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 20px;
 }
 
@@ -310,7 +326,7 @@ label {font:18px/27px Georgia, serif;}
 }
 .leaflet-popup-content-wrapper{background-color:#000;}
 .leaflet-popup-content{
-    font:bold 34px/40px 'Benton Gothic Bold', Arial, sans-serif;
+    font:bold 34px/40px Arial, sans-serif;
     color: white;
     -webkit-font-smoothing: antialiased;
 }
@@ -434,7 +450,7 @@ label {font:18px/27px Georgia, serif;}
 
 .leaflet-control-attribution {
     height: auto;
-    font-family: 'Benton Gothic Regular', Arial, sans-serif;
+    font-family: 'Benton', Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 @keyframes blink-animation {
@@ -485,7 +501,7 @@ p.description {
 
 .selectBox {
     position: relative;
-    height: 34px;
+    height: 40px;
     margin: 3px 0 0 0;
 }
 
@@ -500,19 +516,15 @@ p.description {
     right: 0;
     top: 0;
     bottom: 0;
-    border: 2px solid #b5b5b5;
-    color: #acacac;
-    font-family: Arial,sans-serif;
     border-radius: 6px;
 }
 
 .selectBox select {
-    color: #acacac;
+    font-family: Arial, sans-serif;
     font-weight: normal;
-    letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 20px;
-    height: 34px;
+    height: 40px;
 }
 
 #checkboxes {
@@ -532,7 +544,7 @@ p.description {
 
 #checkboxes label {
     display: block;
-    font-family: 'Benton Gothic Regular', Arial, sans-serif;
+    font-family: 'Benton', Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
 }
@@ -584,13 +596,15 @@ p.description {
 .small_label span, .small_label textarea {
     font-size: 26px;
     line-height: 30px;
-    font-family: 'Benton Gothic Regular', Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
 }
 
 .medium_label span, .medium_label textarea {
     font-size: 34px;
     line-height: 38px;
-    font-family: 'Benton Gothic Bold', Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
 }
 
 .text-label textarea:focus {
@@ -600,6 +614,10 @@ p.description {
 .label-size-btn {
     display: inline-block;
     margin: 0 5px;
+}
+
+fieldset {
+  border: 0;
 }
 
 input[type=range] {
@@ -719,4 +737,40 @@ input[type=range]:focus::-ms-fill-upper {
 }
 .fa-unlock-alt {
     color: #d1d2d4;
+}
+
+/* buttons */
+.btn {
+  display: inline-block;
+  text-align: center;
+  overflow: visible;
+  vertical-align: middle;
+  border: none;
+  padding: .5em 1.5em;
+  margin: .2em auto;
+  min-height: 3rem;
+  font-size: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 3px;
+  font-family: Benton, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
+  color: #000
+}
+
+.btn--disabled {
+  opacity: .5;
+  cursor: not-allowed
+}
+
+.btn--primary {
+  background-color: #f2f2e8;
+  border: 1px solid #c1c1b9
+}
+
+.btn--primary:hover:not(.btn--disabled):not(.btn--inverse) {
+  background-color: #d9d9d0
 }
