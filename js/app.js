@@ -56,7 +56,7 @@ var slugStart;
 if (getQueryVariable('slugStart')) {
     slugStart = getQueryVariable('slugStart') + '-';
 } else {
-    slugStart = 'la-';
+    slugStart = 'bg-';
 }
 
 // user map options
@@ -112,12 +112,12 @@ function commafy(num) {
 var initCords, initZoom;
 
 if (typeof configOptions !== 'undefined') {
-    initCoords = (typeof configOptions.initCoords !== 'undefined') ? configOptions.initCoords : [34.0425, -118.24];
+    initCoords = (typeof configOptions.initCoords !== 'undefined') ? configOptions.initCoords : [42.361618, -71.062275];
 
-    initZoom = (typeof configOptions.initZoom !== 'undefined') ? configOptions.initZoom : 10;
+    initZoom = (typeof configOptions.initZoom !== 'undefined') ? configOptions.initZoom : 12;
 } else {
-    initCoords = [34.0425, -118.24];
-    initZoom = 10;
+    initCoords = [42.361618, -71.062275];
+    initZoom = 12;
 }
 
 // revert to URL if that's there
@@ -144,20 +144,20 @@ var map = L.map('map', {
 
 
 map.attributionControl.setPrefix(attribution+'Nextzen, OpenStreetMap');
-var quietLAlayer = Tangram.leafletLayer({
+var tangramMapLayer = Tangram.leafletLayer({
     scene: 'map-styles.yaml',
     events: {
         // click: function(selection) { console.log('Click!', selection); }
     }
 });
 
-quietLAlayer.addTo(map);
+tangramMapLayer.addTo(map);
 // L.control.scale().addTo(map);
-var scene = quietLAlayer.scene;
+var scene = tangramMapLayer.scene;
 
 
 // make map resizable after load
-quietLAlayer.on("load",function(){
+tangramMapLayer.on("load",function(){
     $( function() {
         $( "#map_holder" ).resizable({grid:10});
     } );
@@ -832,7 +832,7 @@ function showCheckboxes() {
         expanded = false;
         // toggle layer focus style
         $(".overSelect").css("border","2px solid #b5b5b5");
-        $(".selectBox select").css("color","#acacac");
+        $(".selectBox select").css("color","#000");
 
     }
 

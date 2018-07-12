@@ -3,11 +3,7 @@
 <head>
     <title>Web map maker</title>
     <meta charset="utf-8" />
-    
-    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="styles/ngux-tophat-0.4.5.min.css" />
-    <link rel="stylesheet" type="text/css" href="styles/bootstrap-responsive.min.css" />
-    <link rel="stylesheet" type="text/css" href="styles/ngux-tophat-responsive-0.4.5.min.css" />
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="js/leaflet-1.3.1/leaflet.css">
@@ -18,8 +14,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script type="text/javascript" src="js/bing-geocodifier.js"></script>
-
-    <script type="text/javascript" src="https://d1qqc1e9kvmdh8.cloudfront.net/bootstrap/2.3.2/js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="https://d1qqc1e9kvmdh8.cloudfront.net/js/underscore-1.8.3-min.js"></script>
 
@@ -71,7 +65,7 @@
 
                 <div class="map_option">
                     <input type="file" id="geo_files" name="files[]" accept=".geojson,.json" multiple>
-                    <label for="geo_files" class="btn gray">Upload GeoJSON</label>
+                    <label for="geo_files" class="btn btn--primary">Upload GeoJSON</label>
                     <a id="zoom_to_geojson">Zoom to file</a>
                 </div>
                 <div class="map_option">
@@ -89,13 +83,13 @@
                 </div>
 
                 <div class="map_option">
-                    <button class='btn gray' onclick='addCustomLabel("small");'>+small label</button>
-                    <button class='btn gray' onclick='addCustomLabel("medium");'>+medium label</button>
+                    <button class='btn btn--primary' onclick='addCustomLabel("small");'>+small label</button>
+                    <button class='btn btn--primary' onclick='addCustomLabel("medium");'>+medium label</button>
                 </div>
 
                 <div class="map_option">
-                    <button class='btn gray' onclick='downloadIMG();' id='download_img'>Map loading...<img src="images/preloader.gif" alt="Preloader" class="map_loader" /></button>
-                    <button class='btn' onclick='downloadVector();' id='download_vector'>Download vector</button>
+                    <button class='btn btn--primary' onclick='downloadIMG();' id='download_img'>Map loading...<img src="images/preloader.gif" alt="Preloader" class="map_loader" /></button>
+                    <button class='btn btn--primary' onclick='downloadVector();' id='download_vector'>Download vector</button>
                 </div>
 
 
@@ -125,8 +119,6 @@
             </div>
         </div>
 
-        <p class="description">This tool uses Microsoft’s geocoder to approximate an address’s location. It also uses data provided by OpenStreetMap (which you can <a href="http://www.openstreetmap.org/" target="_blank">edit here</a>) and Nextzen. Some supervisor, congressional and other GeoJSON boundaries can be found at <a href="http://boundaries.latimes.com/" target="_blank">boundaries.latimes.com</a>. You can draw your own file at <a href="http://geojson.io/" target="_blank">geojson.io</a>. Questions? Contact <a href="mailto:jon@latimes.com">jon@latimes.com</a> or <a href="https://github.com/datadesk/web-map-maker/issues" target="_blank">submit a bug</a> in GitHub.</p>
-
         <canvas id="canvas" width="1300" height="730"></canvas>
 
         <div id="img-out"></div>
@@ -136,7 +128,7 @@
     </div>
 
     <!-- load all the JS -->
-    <script type="text/javascript" src="http://cookbook.latimes.com/js/d3-3.5.6/d3.min.js"></script>
+    <script type="text/javascript" src="https://apps.bostonglobe.com/common/js/d3/d3-3.5.16.min.js"></script>
     <script type="text/javascript" src="js/svg-export.js?v=2"></script>
     <script type="text/javascript" src="js/app.js"></script>
 

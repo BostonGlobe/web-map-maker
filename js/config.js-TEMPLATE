@@ -4,8 +4,8 @@
 var configOptions = {
     'bingAPI': 'YOUR_API_KEY_HERE',
     'attribution': 'YOUR_ATTRIBUTION_STRING_HERE',
-    'initCoords': [34.0425, -118.24], // Los Angeles
+    'initCoords': [42.361618, -71.062275], // Boston
     'mapzen-api': 'MAPZEN API KEY',
-    'columnWidth': 110.45, // L.A. Times width of a print column on six-column page
-    'gutterWidth': 12 // L.A. Times gutter between column
+    'columnWidth': 123.33333, // width of a print column on six-column page
+    'gutterWidth': 12 // gutter between column
 }
