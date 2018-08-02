@@ -699,8 +699,8 @@ function writeSVGFile(mapObject) {
                 $("#landuse #pier path").appendTo("#pierland");
 
                 d3.selectAll('#pierland path')
-                    .attr('fill','#fff')
-                    .attr('stroke','#fff')
+                    .attr('fill','#EBE9E5')
+                    .attr('stroke','#EBE9E5')
                     .attr('stroke-width','0px');
 
                 $("#landuse #pier").remove();
@@ -708,19 +708,19 @@ function writeSVGFile(mapObject) {
                 // roads
                 // widths based on L.A. Times print styles
                 d3.selectAll('#highway path')
-                    .attr('stroke','#a7a9ac')
+                    .attr('stroke','#fff')
                     .attr('stroke-width','2px');
                 d3.selectAll('#highwaylink path')
-                    .attr('stroke','#bcbec0')
+                    .attr('stroke','#fff')
                     .attr('stroke-width','1px');
                 d3.selectAll('#majorroad path')
-                    .attr('stroke','#bcbec0')
+                    .attr('stroke','#fff')
                     .attr('stroke-width','1px');
                 d3.selectAll('#minorroad path')
-                    .attr('stroke','#bcbec0')
+                    .attr('stroke','#fff')
                     .attr('stroke-width','0.65px');
                 d3.selectAll('#service path')
-                    .attr('stroke','#d1d3d4')
+                    .attr('stroke','#fff')
                     .attr('stroke-width','0.65px');
 
                 d3.selectAll('#path path')
@@ -757,99 +757,99 @@ function writeSVGFile(mapObject) {
                     .attr('stroke-width','0.65px');
 
                 d3.selectAll('#roads #pier path')
-                    .attr('stroke','#fff')
+                    .attr('stroke','#EBE9E5')
                     .attr('stroke-width','1px');
 
                 // landuse styles
                 d3.selectAll('#university path')
                     .attr('fill','#F2F0E7')
-                    .attr('stroke','#fff')
+                    .attr('stroke','#EBE9E5')
                     .attr('stroke-width','0px');
                 d3.selectAll('#stadium path')
                     .attr('fill','#F9F3D6')
-                    .attr('stroke','#fff')
+                    .attr('stroke','#EBE9E5')
                     .attr('stroke-width','0px');
                 d3.selectAll('#school path')
                     .attr('fill','#F2F0E7')
-                    .attr('stroke','#fff')
+                    .attr('stroke','#EBE9E5')
                     .attr('stroke-width','0px');
                 d3.selectAll('#resort path')
                     .attr('fill','#F9F3D6')
-                    .attr('stroke','#fff')
+                    .attr('stroke','#EBE9E5')
                     .attr('stroke-width','0px');
                 d3.selectAll('#park path')
-                    .attr('fill','#E7F1CA')
-                    .attr('stroke','#fff')
+                    .attr('fill','#CFDAB5')
+                    .attr('stroke','#EBE9E5')
                     .attr('stroke-width','0px');
                 d3.selectAll('#wetland path')
                     .attr('fill','#e1e9db')
-                    .attr('stroke','#fff')
+                    .attr('stroke','#EBE9E5')
                     .attr('stroke-width','0px');
                 d3.selectAll('#military path')
                     .attr('fill','#eff0ef')
-                    .attr('stroke','#fff')
+                    .attr('stroke','#EBE9E5')
                     .attr('stroke-width','0px');
                 d3.selectAll('#prison path')
                     .attr('fill','#eff0ef')
-                    .attr('stroke','#fff')
+                    .attr('stroke','#EBE9E5')
                     .attr('stroke-width','0px');
                 d3.selectAll('#hospital path')
                     .attr('fill','#E2EDEF')
-                    .attr('stroke','#fff')
+                    .attr('stroke','#EBE9E5')
                     .attr('stroke-width','0px');
                 d3.selectAll('#forest path')
                     .attr('fill','#E7F1CA')
-                    .attr('stroke','#fff')
+                    .attr('stroke','#EBE9E5')
                     .attr('stroke-width','0px');
                 d3.selectAll('#cemetery path')
                     .attr('fill','#E4E4D5')
-                    .attr('stroke','#fff')
+                    .attr('stroke','#EBE9E5')
                     .attr('stroke-width','0px');
                 d3.selectAll('#beach path')
                     .attr('fill','#F8F4E1')
-                    .attr('stroke','#fff')
+                    .attr('stroke','#EBE9E5')
                     .attr('stroke-width','0px');
                 d3.selectAll('#airport path')
                     .attr('fill','#eff0ef')
-                    .attr('stroke','#fff')
+                    .attr('stroke','#EBE9E5')
                     .attr('stroke-width','0px');
                 d3.selectAll('#etc path')
                     .attr('fill','none')
-                    .attr('stroke','#fff')
+                    .attr('stroke','#EBE9E5')
                     .attr('stroke-width','0px');
 
                 // water
                 console.log('collecting #water path')
                 d3.selectAll('#water path')
-                    .attr('fill','#A9D7F4')
-                    .attr('stroke','#fff')
+                    .attr('fill','#93B4B1')
+                    .attr('stroke','#EBE9E5')
                     .attr('stroke-width','0px');
                 console.log('collecting #ocean path')
                 d3.selectAll('#ocean path')
-                    .attr('fill','#A9D7F4')
-                    .attr('stroke','#fff')
+                    .attr('fill','#93B4B1')
+                    .attr('stroke','#EBE9E5')
                     .attr('stroke-width','0px');
                 console.log('collecting #riverbank path')
                 d3.selectAll('#riverbank path')
-                    .attr('fill','#A9D7F4')
-                    .attr('stroke','#fff')
+                    .attr('fill','#93B4B1')
+                    .attr('stroke','#EBE9E5')
                     .attr('stroke-width','0px');
                 console.log('collecting #river path')
                 d3.selectAll('#river path')
                     .attr('fill','none')
-                    .attr('stroke','#abd7f3')
+                    .attr('stroke','#93B4B1')
                     .attr('stroke-width','1px');
                 console.log('collecting #stream path')
                 d3.selectAll('#stream path')
                     .attr('fill','none')
-                    .attr('stroke','#A9D7F4')
+                    .attr('stroke','#93B4B1')
                     .attr('stroke-width','0.35px');
 
                 // earth
                 console.log('collecting #earth #earthland path')
                 d3.selectAll('#earth #earthland path')
-                    .attr('fill','#fff')
-                    .attr('stroke','#fff')
+                    .attr('fill','#EBE9E5')
+                    .attr('stroke','#EBE9E5')
                     .attr('stroke-width','0px');
 
                 // terrain
@@ -888,7 +888,7 @@ function writeSVGFile(mapObject) {
                 // uploaded geojson points
                 window.d3.selectAll('#pointFeatures circle')
                     .attr('fill','#cd7139')
-                    .attr('stroke','#ffffff')
+                    .attr('stroke','#EBE9E5fff')
                     .attr('stroke-width','1px');
 
                 // boundaries
